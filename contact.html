@@ -49,26 +49,8 @@
             </nav>
         </div>
     </header>
-    <section id="banner">
-        <div class="bannerImage" style="background-image: url('./assets/banner.jpg');">
-            <div class="overlay center">
-                <div class="container">
-                    <h2>We are used to making WONDERS</h2>
-                    <button class="thmbtn">View Project &nbsp; &xrarr;</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="client">
-        <div class="overlay">
-            <div class="container center">
-                <img src="./assets/client/Infosys.png" alt="" width="120">
-                <img src="./assets/client/intel.png" alt="" width="120">
-                <img src="./assets/client/isb.jpeg" alt="" width="120">
-                <img src="./assets/client/Nowfloats.svg" alt="" width="120">
-                <img src="./assets/client/Tata.png" alt="" width="120">
-            </div>
-        </div>
+    <section>
+        <div id="map" style="width:100%;height:400px;"></div>
     </section>
     <footer>
         <div class="container center">
@@ -113,6 +95,18 @@
             </div>
         </div>
     </footer>
+
+<script>
+    function myMap() {
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+      };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALDY1rbvCWu8JAP9QJlQc86o9w7yoPd7w&callback=myMap"></script>
 </body>
 
 </html>
