@@ -52,6 +52,35 @@
     <section>
         <div id="map" style="width:100%;height:400px;"></div>
     </section>
+    <section id="contactUs" class="bgImg overlay">
+        <div class="container center">
+        <div>
+            <h2>Get in touch with us today!</h2>
+            <p>Our vision is that of continuous innovation, unmatched quality and customization. By utmost adherence to
+                client specifications along with cost optimization, we strive to hand over state of the art end products
+                in terms of design, functionality, safety and management controls. </p>
+                <h5>Flat No. D1, 1st Floor, GRC Residency, High Tension Line Road, Chand Nayak Nagar, Madhapur, Hyderabad-500081</h5>
+                <div>
+                    <span>EMAIL:</span>
+                    <span>info@ogipl.com</span>
+                </div>
+                <div>
+                    <span>PHONE:</span>
+                    <span>(+91) 9704742412</span>
+                </div>
+        </div>
+        <div>
+            <div>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email address">
+            </div>
+            <div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button class="thmbtn">Send Message</button>
+        </div>
+    </div>
+    </section>
     <footer>
         <div class="container center">
             <div>
@@ -96,17 +125,18 @@
         </div>
     </footer>
 
-<script>
-    function myMap() {
-      var mapCanvas = document.getElementById("map");
-      var mapOptions = {
-        center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-      };
-      var map = new google.maps.Map(mapCanvas, mapOptions);
-    }
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(17.478540, 78.362400), zoom: 10
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
     </script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALDY1rbvCWu8JAP9QJlQc86o9w7yoPd7w&callback=myMap"></script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALDY1rbvCWu8JAP9QJlQc86o9w7yoPd7w&callback=myMap"></script>
 </body>
 
 </html>

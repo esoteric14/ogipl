@@ -39,6 +39,7 @@ body {
     color: $thmBlack;
     font-size: 12px;
     margin: 0;
+    line-height: 20px;
   }
 
   input {
@@ -57,7 +58,7 @@ body {
   .thmbtn {
     background-color: $primaryColor;
     color: $thmWhite;
-    font-size: 12px;
+    font-size: 14px;
     border: none;
     outline: none;
     border: none;
@@ -69,10 +70,25 @@ body {
     border: 1px solid $primaryColor;
     cursor: pointer;
   }
+  // .overlay {
+  //   background-color: rgba(0, 0, 0, 0.1);
+  //   width: 100%;
+  //   height: 100%;
+  // }
+  section{
+    position: relative;
+  }
+
   .overlay {
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: 100%;
+    &:after {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .center {
@@ -89,6 +105,13 @@ body {
     color: $primaryColor;
     font-size: 26px;
     font-weight: 800;
+  }
+
+  .bgImg {
+    background-image: url("../assets/pattern.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: unset;
   }
 }
 
@@ -152,8 +175,8 @@ header {
     h2 {
       color: $thmWhite;
       color: #ffffff;
-      font-size: 32px;
-      width: 300px;
+      font-size: 36px;
+      width: 345px;
       padding-bottom: 30px;
     }
   }
@@ -218,7 +241,7 @@ header {
 }
 
 // pageTitle
-#pageTitle{
+#pageTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,13 +251,20 @@ header {
   background-repeat: no-repeat;
   height: 30vh;
   color: $thmWhite;
-  
-  h2{
+
+  h2 {
     font-size: 36px;
   }
-  p{
+  p {
     color: $thmWhite;
     font-size: 16px;
+  }
+}
+
+#contactUs{
+  div{
+    width: 50%;
+    padding-right: 20px;
   }
 }
 
@@ -245,6 +275,13 @@ footer {
 
   p {
     width: 250px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  img {
+    padding-bottom: 20px;
+    width: 200px;
   }
 
   div {
