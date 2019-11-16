@@ -70,25 +70,15 @@ body {
     border: 1px solid $primaryColor;
     cursor: pointer;
   }
-  // .overlay {
-  //   background-color: rgba(0, 0, 0, 0.1);
-  //   width: 100%;
-  //   height: 100%;
-  // }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  
   section{
     position: relative;
-  }
-
-  .overlay {
-    &:after {
-      content: '';
-      background-color: rgba(0, 0, 0, 0.4);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
   }
 
   .center {
@@ -240,7 +230,6 @@ header {
   }
 }
 
-// pageTitle
 #pageTitle {
   display: flex;
   flex-direction: column;

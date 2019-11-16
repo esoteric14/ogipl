@@ -80,6 +80,12 @@ body .thmbtn {
   cursor: pointer;
 }
 
+body .overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+}
+
 body section {
   position: relative;
 }
