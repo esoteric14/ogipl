@@ -1,0 +1,90 @@
+#mission{
+    background-image: url("../assets/parallex.jpg");
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $thmWhite;
+    
+    .container {
+      flex-direction: column;
+  
+      h3 {
+        font-size: 24px;
+        font-weight: 800;
+      }
+  
+      p {
+        text-align: center;
+        color: $thmWhite;
+        font-size: 16px;
+        font-weight: 800;
+        width: 460px;
+      }
+    }
+}
+
+#testimonials {
+  .container {
+    flex-direction: column;
+
+    .card-container {
+      width: 100%;
+      flex-direction: row;
+
+      .card {
+        width: 450px;
+        background-color: $thmWhite;
+        border-left: $primaryColor solid 2px;
+        // padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+          margin: 20px;
+
+          img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+
+          h2 {
+            font-size: 14px;
+            font-weight: 600;
+          }
+          h3 {
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+#getInTouch {
+  background-image: url("../assets/parallex.jpg");
+  background-origin: border-box;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $thmWhite;
+
+  .container {
+    flex-direction: column;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    p {
+      text-align: center;
+      color: $thmWhite;
+      font-weight: 600;
+      width: 460px;
+    }
+  }
+}

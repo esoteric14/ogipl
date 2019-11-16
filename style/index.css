@@ -80,6 +80,15 @@ body .thmbtn {
   cursor: pointer;
 }
 
+body .readMore {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  color: #08a146;
+}
+
 body .overlay {
   background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -267,6 +276,23 @@ header nav ul li.callCta a {
      object-fit: cover;
 }
 
+#services .overlay .center .card-container .card div {
+  margin: 20px;
+}
+
+#services .overlay .center .card-container .card div h5 {
+  color: #515151;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+  height: 30px;
+}
+
+#services .overlay .center .card-container .card div p {
+  color: #515151;
+  height: 80px;
+}
+
 #testimonials .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -362,7 +388,7 @@ header nav ul li.callCta a {
 }
 
 #client .overlay {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 #client .overlay img {
@@ -370,31 +396,32 @@ header nav ul li.callCta a {
           filter: grayscale(1);
 }
 
-#enquiry {
+#getInTouch {
   background-image: url("../assets/parallex.jpg");
   background-origin: border-box;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
 }
 
-#enquiry .center {
+#getInTouch .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-#enquiry .center p {
+#getInTouch .container h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#getInTouch .container p {
+  text-align: center;
   color: #ffffff;
-  padding-bottom: 30px;
-}
-
-#enquiry .center .inputs {
-  padding-bottom: 30px;
-}
-
-#enquiry .center .inputs [type="text"] {
-  width: 450px;
+  font-weight: 600;
+  width: 460px;
 }
 
 #pageTitle {
@@ -457,6 +484,23 @@ header nav ul li.callCta a {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#blog .container .card-container .card div {
+  margin: 20px;
+}
+
+#blog .container .card-container .card div h5 {
+  color: #515151;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+  height: 60px;
+}
+
+#blog .container .card-container .card div p {
+  color: #515151;
+  height: 80px;
 }
 
 #contactUs div {

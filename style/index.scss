@@ -70,6 +70,14 @@ body {
     border: 1px solid $primaryColor;
     cursor: pointer;
   }
+  .readMore {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    color: $primaryColor;
+  }
 
   .overlay {
     background-color: rgba(0, 0, 0, 0.1);
@@ -233,6 +241,23 @@ header {
             height: 250px;
             object-fit: cover;
           }
+
+          div {
+            margin: 20px;
+
+            h5 {
+              color: $thmBlack;
+              font-weight: 800;
+              font-size: 18px;
+              margin: 0;
+              height: 30px;
+            }
+
+            p {
+              color: $thmBlack;
+              height: 80px;
+            }
+          }
         }
       }
     }
@@ -266,12 +291,11 @@ header {
             border-radius: 50%;
           }
 
-          h2{
-
+          h2 {
             font-size: 14px;
             font-weight: 600;
           }
-          h3{
+          h3 {
             font-size: 12px;
             font-weight: 600;
           }
@@ -309,7 +333,7 @@ header {
   background-repeat: repeat;
 
   .overlay {
-    padding: 20px 0;
+    padding: 40px 0;
 
     img {
       filter: grayscale(1);
@@ -317,24 +341,27 @@ header {
   }
 }
 
-#enquiry {
+#getInTouch {
   background-image: url("../assets/parallex.jpg");
   background-origin: border-box;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  color: $thmWhite;
 
-  .center {
+  .container {
     flex-direction: column;
 
-    p {
-      color: $thmWhite;
-      padding-bottom: 30px;
+    h3 {
+      font-size: 24px;
+      font-weight: 800;
     }
-    .inputs {
-      padding-bottom: 30px;
-      [type="text"] {
-        width: 450px;
-      }
+
+    p {
+      text-align: center;
+      color: $thmWhite;
+      font-weight: 600;
+      width: 460px;
     }
   }
 }
@@ -377,6 +404,23 @@ header {
           height: 250px;
           object-fit: cover;
         }
+        div {
+          margin: 20px;
+
+          h5 {
+            color: $thmBlack;
+            font-weight: 800;
+            font-size: 18px;
+            margin: 0;
+            height: 60px;
+          }
+
+          p {
+            color: $thmBlack;
+            height: 80px;
+          }
+        }
+
       }
     }
   }
