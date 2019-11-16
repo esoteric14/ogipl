@@ -31,7 +31,7 @@ body a {
 body p {
   font-family: "Muli", sans-serif;
   color: #515151;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   line-height: 20px;
 }
@@ -90,16 +90,6 @@ body section {
   position: relative;
 }
 
-body .overlay:after {
-  content: '';
-  background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 body .center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,14 +102,23 @@ body .center {
           align-items: center;
 }
 
+body .mt-40 {
+  margin-top: 40px;
+}
+
 body .ptb-30 {
   padding: 30px 0;
+}
+
+body .ptb-80 {
+  padding: 80px 0;
 }
 
 body .secTitle {
   color: #08a146;
   font-size: 26px;
   font-weight: 800;
+  margin: 0 0 40px;
 }
 
 body .bgImg {
@@ -190,12 +189,82 @@ header nav ul li.callCta a {
   background-size: cover;
 }
 
-#banner .bannerImage h2 {
+#banner .bannerImage .container {
+  z-index: 9;
+}
+
+#banner .bannerImage .container h2 {
   color: #ffffff;
   color: #ffffff;
   font-size: 36px;
   width: 345px;
   padding-bottom: 30px;
+}
+
+#aboutUs {
+  background-image: url(../assets/pattern.png);
+  background-repeat: no-repeat;
+  background-position: 54% center;
+  background-size: 300px;
+  background-clip: border-box;
+  background-blend-mode: lighten;
+}
+
+#aboutUs .container div {
+  width: 450px;
+  font-weight: 600;
+}
+
+#aboutUs .container div p {
+  margin: 20px 0;
+}
+
+#aboutUs .container div .thmbtn {
+  margin-top: 40px;
+}
+
+#aboutUs .container img {
+  width: 400px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#services .overlay .center {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#services .overlay .center .card-container {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#services .overlay .center .card-container .card {
+  width: 300px;
+  background-color: #f9fafa;
+}
+
+#services .overlay .center .card-container .card img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #project {
