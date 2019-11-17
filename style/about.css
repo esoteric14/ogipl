@@ -1,0 +1,109 @@
+#mission {
+  background-image: url("../assets/parallex.jpg");
+  background-origin: border-box;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+#mission .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mission .container h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#mission .container p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  width: 460px;
+}
+
+#testimonials .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#testimonials .container .card-container {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#testimonials .container .card-container .card {
+  width: 450px;
+  background-color: #ffffff;
+  border-left: #08a146 solid 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#testimonials .container .card-container .card div {
+  margin: 20px;
+}
+
+#testimonials .container .card-container .card div img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#testimonials .container .card-container .card div h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#testimonials .container .card-container .card div h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#getInTouch {
+  background-image: url("../assets/parallex.jpg");
+  background-origin: border-box;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+#getInTouch .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#getInTouch .container h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#getInTouch .container p {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  width: 460px;
+}
+/*# sourceMappingURL=about.css.map */
