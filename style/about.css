@@ -1,3 +1,110 @@
+#pageTitle {
+  background-image: url("../assets/parallex.jpg");
+  background-origin: border-box;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+#pageTitle .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 800;
+}
+
+#pageTitle .overlay h2 {
+  font-size: 24px;
+}
+
+#pageTitle .overlay p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#description .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#description .container div:first-child {
+  width: 60%;
+}
+
+#description .container div:first-child ul li {
+  padding-left: 15px;
+}
+
+#description .container div:first-child ul li:before {
+  content: "";
+  border-color: transparent #08a146;
+  border-style: solid;
+  border-width: 0.3em 0 0.3em 0.4em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 1em;
+  position: relative;
+}
+
+#description .container div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 250px;
+  color: #515151;
+  font-weight: 800;
+}
+
+#description .container div:last-child h5 {
+  font-size: 14px;
+}
+
+#description .container div:last-child p {
+  font-size: 18px;
+}
+
+#description .container div:last-child p span {
+  display: block;
+  color: #08a146;
+  font-size: 48px;
+  margin: 20px;
+  text-align: center;
+}
+
 #mission {
   background-image: url("../assets/parallex.jpg");
   background-origin: border-box;
@@ -24,7 +131,7 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 800;
-  width: 460px;
+  width: 80%;
 }
 
 #testimonials .container {
@@ -105,5 +212,6 @@
   color: #ffffff;
   font-weight: 600;
   width: 460px;
+  font-size: 14px;
 }
 /*# sourceMappingURL=about.css.map */
