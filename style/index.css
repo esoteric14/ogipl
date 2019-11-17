@@ -424,7 +424,8 @@ header nav ul li.callCta a {
   width: 460px;
 }
 
-#blog .container {
+#blog .container,
+#valueSystem .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,27 +441,32 @@ header nav ul li.callCta a {
           flex-direction: column;
 }
 
-#blog .container .card-container {
+#blog .container .card-container,
+#valueSystem .container .card-container {
   width: 100%;
 }
 
-#blog .container .card-container .card {
+#blog .container .card-container .card,
+#valueSystem .container .card-container .card {
   width: 300px;
   background-color: #f9fafa;
 }
 
-#blog .container .card-container .card img {
+#blog .container .card-container .card img,
+#valueSystem .container .card-container .card img {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#blog .container .card-container .card div {
+#blog .container .card-container .card div,
+#valueSystem .container .card-container .card div {
   margin: 20px;
 }
 
-#blog .container .card-container .card div h5 {
+#blog .container .card-container .card div h5,
+#valueSystem .container .card-container .card div h5 {
   color: #515151;
   font-weight: 800;
   font-size: 18px;
@@ -468,7 +474,8 @@ header nav ul li.callCta a {
   height: 60px;
 }
 
-#blog .container .card-container .card div p {
+#blog .container .card-container .card div p,
+#valueSystem .container .card-container .card div p {
   color: #515151;
   height: 80px;
 }
