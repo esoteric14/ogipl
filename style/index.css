@@ -218,7 +218,8 @@ header nav ul li.callCta a {
 }
 
 #aboutUs,
-#joinOurTeam {
+#joinOurTeam,
+#completeSolution {
   background-image: url(../assets/pattern.png);
   background-repeat: no-repeat;
   background-position: 54% center;
@@ -228,23 +229,27 @@ header nav ul li.callCta a {
 }
 
 #aboutUs .container div,
-#joinOurTeam .container div {
+#joinOurTeam .container div,
+#completeSolution .container div {
   width: 450px;
   font-weight: 600;
 }
 
 #aboutUs .container div p,
-#joinOurTeam .container div p {
+#joinOurTeam .container div p,
+#completeSolution .container div p {
   margin: 20px 0;
 }
 
 #aboutUs .container div .thmbtn,
-#joinOurTeam .container div .thmbtn {
+#joinOurTeam .container div .thmbtn,
+#completeSolution .container div .thmbtn {
   margin-top: 40px;
 }
 
 #aboutUs .container img,
-#joinOurTeam .container img {
+#joinOurTeam .container img,
+#completeSolution .container img {
   width: 400px;
   height: 500px;
   -o-object-fit: cover;
