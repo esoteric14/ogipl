@@ -1,1 +1,80 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+#contactUs {
+  color: #515151;
+}
+
+#contactUs div {
+  width: 50%;
+  padding-right: 20px;
+}
+
+#contactUs .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactUs .container div:first-child p {
+  font-weight: 600;
+}
+
+#contactUs .container div:first-child h5 {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#contactUs .container div:first-child .email span,
+#contactUs .container div:first-child .phone span {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+#contactUs .container div:first-child .email a,
+#contactUs .container div:first-child .phone a {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#contactUs .container div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#contactUs .container div:last-child .contactInfo,
+#contactUs .container div:last-child .qureyMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contactUs .container div:last-child .contactInfo input,
+#contactUs .container div:last-child .qureyMessage input {
+  width: 45%;
+}
+
+#contactUs .container div:last-child .contactInfo textarea,
+#contactUs .container div:last-child .qureyMessage textarea {
+  width: 100%;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,60 @@
+$primaryColor: #08a146;
+$thmBlack: #515151;
+$thmWhite: #ffffff;
+$primaryFont: "Muli", sans-serif;
+
+#contactUs {
+  color: $thmBlack;
+  div {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div:first-child {
+      p {
+        font-weight: 600;
+      }
+      h5 {
+        font-weight: 800;
+        font-size: 16px;
+      }
+      .email span,
+      .phone span {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 14px;
+      }
+      .email a,
+      .phone a {
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+    div:last-child {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: space-around;
+
+      .contactInfo,
+      .qureyMessage {
+        display: flex;
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: space-between;
+
+        input{
+            width: 45%;
+        }
+        textarea{
+            width: 100%;
+        }
+      }
+    }
+  }
+}

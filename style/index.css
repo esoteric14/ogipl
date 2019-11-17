@@ -36,7 +36,9 @@ body p {
   line-height: 20px;
 }
 
-body input {
+body input,
+body textarea {
+  font-family: "Muli", sans-serif;
   outline: none;
   border: solid 1px #d7d7d7;
   background-color: #ffffff;
@@ -44,22 +46,26 @@ body input {
   margin: 0;
 }
 
-body input::-webkit-input-placeholder {
+body input::-webkit-input-placeholder,
+body textarea::-webkit-input-placeholder {
   color: #888888;
   font-size: 12px;
 }
 
-body input:-ms-input-placeholder {
+body input:-ms-input-placeholder,
+body textarea:-ms-input-placeholder {
   color: #888888;
   font-size: 12px;
 }
 
-body input::-ms-input-placeholder {
+body input::-ms-input-placeholder,
+body textarea::-ms-input-placeholder {
   color: #888888;
   font-size: 12px;
 }
 
-body input::placeholder {
+body input::placeholder,
+body textarea::placeholder {
   color: #888888;
   font-size: 12px;
 }
@@ -478,11 +484,6 @@ header nav ul li.callCta a {
 #valueSystem .container .card-container .card div p {
   color: #515151;
   height: 80px;
-}
-
-#contactUs div {
-  width: 50%;
-  padding-right: 20px;
 }
 
 footer {
