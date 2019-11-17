@@ -3,32 +3,6 @@ $thmBlack: #515151;
 $thmWhite: #ffffff;
 $primaryFont: "Muli", sans-serif;
 
-#pageTitle {
-  background-image: url("../assets/parallex.jpg");
-  background-origin: border-box;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  color: $thmWhite;
-
-  .overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-weight: 800;
-
-    h2 {
-      font-size: 24px;
-    }
-
-    p {
-      font-size: 14px;
-      color: $thmWhite;
-    }
-  }
-}
-
 #description {
   .container {
     display: flex;

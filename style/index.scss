@@ -73,6 +73,7 @@ body {
     cursor: pointer;
   }
   .readMore {
+    border: none;
     background-color: transparent;
     text-transform: uppercase;
     font-size: 12px;
@@ -194,7 +195,8 @@ header {
   }
 }
 
-#aboutUs {
+#aboutUs,
+#joinOurTeam {
   background-image: url(../assets/pattern.png);
   background-repeat: no-repeat;
   background-position: 54% center;
@@ -266,7 +268,7 @@ header {
   }
 }
 
-#testimonials {
+#testimonials{
   .container {
     flex-direction: column;
 
@@ -481,5 +483,32 @@ footer {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+
+// common style
+#pageTitle {
+  background-image: url("../assets/parallex.jpg");
+  background-origin: border-box;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $thmWhite;
+
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 800;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      color: $thmWhite;
+    }
   }
 }

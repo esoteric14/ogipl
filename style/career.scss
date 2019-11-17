@@ -1,0 +1,54 @@
+$primaryColor: #08a146;
+$thmBlack: #515151;
+$thmWhite: #ffffff;
+$primaryFont: "Muli", sans-serif;
+
+#openings{
+    .container {
+      flex-direction: column;
+  
+      .card-container {
+        width: 100%;
+        flex-direction: row;
+  
+        .card {
+          width: 30%;
+          background-color: $thmWhite;
+          border-left: $primaryColor solid 2px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          div{
+              padding: 20px;
+              color: $thmBlack;
+
+              h2{
+                font-weight: 800;
+                font-size: 16px;
+                margin: 0;
+              }
+              h3{
+                font-weight: 800;
+                font-size: 12px;
+                margin: 0 0 20px;
+                text-transform: uppercase;
+              }
+
+              ul{
+                  li{
+                      list-style-type: disc;
+                      margin-left: 15px;
+                      font-size: 14px;
+                  }
+                  margin-bottom: 20px;
+              }
+
+              button{  
+                  float: right;
+              }
+          }
+        }
+      }
+    }
+  }

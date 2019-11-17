@@ -87,6 +87,7 @@ body .thmbtn {
 }
 
 body .readMore {
+  border: none;
   background-color: transparent;
   text-transform: uppercase;
   font-size: 12px;
@@ -216,7 +217,8 @@ header nav ul li.callCta a {
   padding-bottom: 30px;
 }
 
-#aboutUs {
+#aboutUs,
+#joinOurTeam {
   background-image: url(../assets/pattern.png);
   background-repeat: no-repeat;
   background-position: 54% center;
@@ -225,20 +227,24 @@ header nav ul li.callCta a {
   background-blend-mode: lighten;
 }
 
-#aboutUs .container div {
+#aboutUs .container div,
+#joinOurTeam .container div {
   width: 450px;
   font-weight: 600;
 }
 
-#aboutUs .container div p {
+#aboutUs .container div p,
+#joinOurTeam .container div p {
   margin: 20px 0;
 }
 
-#aboutUs .container div .thmbtn {
+#aboutUs .container div .thmbtn,
+#joinOurTeam .container div .thmbtn {
   margin-top: 40px;
 }
 
-#aboutUs .container img {
+#aboutUs .container img,
+#joinOurTeam .container img {
   width: 400px;
   height: 500px;
   -o-object-fit: cover;
@@ -557,5 +563,40 @@ footer div .subcribe input {
   .container {
     width: 1170px;
   }
+}
+
+#pageTitle {
+  background-image: url("../assets/parallex.jpg");
+  background-origin: border-box;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+#pageTitle .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 800;
+}
+
+#pageTitle .overlay h2 {
+  font-size: 24px;
+}
+
+#pageTitle .overlay p {
+  font-size: 14px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=index.css.map */
