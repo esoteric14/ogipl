@@ -96,6 +96,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .mt-40 {
@@ -428,7 +429,13 @@ footer {
     width: 200px;
   }
 
-  div {
+  .container.center {
+    align-items: flex-start;
+
+    div{
+      width: 25%;
+    }
+           
     .title {
       font-size: 14px;
       font-weight: 800;

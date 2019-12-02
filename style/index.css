@@ -116,6 +116,8 @@ body .center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body .mt-40 {
@@ -513,31 +515,41 @@ footer img {
   width: 200px;
 }
 
-footer div .title {
+footer .container.center {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .container.center div {
+  width: 25%;
+}
+
+footer .container.center .title {
   font-size: 14px;
   font-weight: 800;
   margin: 0 0 10px;
 }
 
-footer div ul.footerCTA li a {
+footer .container.center ul.footerCTA li a {
   font-size: 12px;
 }
 
-footer div .address {
+footer .container.center .address {
   padding-bottom: 10px;
 }
 
-footer div .contactDetail a {
+footer .container.center .contactDetail a {
   display: block;
   font-size: 12px;
   padding: 2px 0px;
 }
 
-footer div .subcribe {
+footer .container.center .subcribe {
   margin-top: 20px;
 }
 
-footer div .subcribe input {
+footer .container.center .subcribe input {
   margin-right: -5px;
 }
 

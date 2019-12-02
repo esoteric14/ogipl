@@ -7,7 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OGIPL</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:400,600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="./style/index.css">
+    <style>
+        .swiper-container {
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,11 +58,46 @@
         </div>
     </header>
     <section id="banner">
-        <div class="bannerImage" style="background-image: url('./assets/banner.jpg');">
-            <div class="overlay center">
-                <div class="container">
-                    <h2>We are used to making WONDERS</h2>
-                    <button class="thmbtn">View Project &nbsp; &xrarr;</button>
+        <div class="bannerImage">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Lazy background image on slide itself -->
+                    <div data-background="./assets/banner.jpg" class="swiper-slide swiper-lazy">
+                        <div class="overlay center">
+                            <div class="container">
+                                <h2>We are used to making WONDERS</h2>
+                                <button class="thmbtn">View Project &nbsp; &xrarr;</button>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-background="./assets/aboutus.jpg" class="swiper-slide swiper-lazy">
+                        <div class="overlay center">
+                            <div class="container">
+                                <h2>We are used to making WONDERS</h2>
+                                <button class="thmbtn">View Project &nbsp; &xrarr;</button>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-background="./assets/parallex.jpg" class="swiper-slide swiper-lazy">
+                        <div class="overlay center">
+                            <div class="container">
+                                <h2>We are used to making WONDERS</h2>
+                                <button class="thmbtn">View Project &nbsp; &xrarr;</button>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-background="./assets/sid.png" class="swiper-slide swiper-lazy">
+                        <div class="overlay center">
+                            <div class="container">
+                                <h2>We are used to making WONDERS</h2>
+                                <button class="thmbtn">View Project &nbsp; &xrarr;</button>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,5 +293,30 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        // Disable preloading of all images
+        preloadImages: false,
+        // Enable lazy loading
+        lazy: {
+            loadPrevNext: true,
+        },
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        effect: 'flip'
+    });</script>
 
 </html>
