@@ -16,9 +16,9 @@
             <a href="./index.html">
                 <img src="./assets/logo.png" alt="OGIPL">
             </a>
-            <button class="toggleNav" onclick="closeSelf(event)">&#10005;</button>
+            <button class="toggleNav" onclick="toggleNav(event)">&#x2630;</button>
         </div>
-        <div>
+        <div class="cta">
             <nav>
                 <ul>
                     <li>
@@ -307,6 +307,21 @@
 </body>
 
 <script>
+    // navbar
+    function toggleNav(){
+        let symbol = {
+            "hamburger" : "&#x2630;",
+            "cross": "&#10005;"
+        }
+        if(event.target.classList.toggle('active')){
+            document.getElementsByTagName('Nav')[0].style.display = 'block';
+            event.target.innerHTML = symbol["cross"];
+        }else{
+            document.getElementsByTagName('Nav')[0].style.display = 'none';
+            event.target.innerHTML = symbol["hamburger"];
+        }
+    }
+    // header
     var slideIndex = 0;
     showSlides();
 

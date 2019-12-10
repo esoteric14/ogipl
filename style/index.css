@@ -171,12 +171,25 @@ header .logo {
   padding: 10px;
 }
 
+@media (max-width: 768px) {
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+}
+
 header .logo img {
   width: 200px;
 }
 
 header .logo .toggleNav {
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -192,14 +205,26 @@ header .logo .toggleNav {
   }
 }
 
-header nav ul {
+@media (max-width: 768px) {
+  header .cta {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header .cta nav {
+    display: none;
+  }
+}
+
+header .cta nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 768px) {
-  header nav ul {
+  header .cta nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -207,46 +232,40 @@ header nav ul {
   }
 }
 
-header nav ul li {
+header .cta nav ul li {
   padding: 20px;
   font-size: 14px;
 }
 
 @media (max-width: 875px) and (min-width: 768px) {
-  header nav ul li {
+  header .cta nav ul li {
     padding: 13.5px;
   }
 }
 
-header nav ul li:hover {
+header .cta nav ul li:hover {
   color: #ffffff;
   background-color: #08a146;
 }
 
-header nav ul li:hover a {
+header .cta nav ul li:hover a {
   color: #ffffff;
 }
 
-header nav ul li a {
+header .cta nav ul li a {
   color: #515151;
   font-weight: 700;
   font-size: 12px;
 }
 
-header nav ul li.callCta:hover {
+header .cta nav ul li.callCta:hover {
   background-color: #ffffff;
   color: #08a146;
 }
 
-header nav ul li.callCta a {
+header .cta nav ul li.callCta a {
   color: #08a146;
   font-weight: 800;
-}
-
-@media (max-width: 768px) {
-  header nav ul li.callCta {
-    border-top: 1px solid #515151;
-  }
 }
 
 #banner .bannerImage {
@@ -638,6 +657,10 @@ footer img {
   width: 200px;
 }
 
+footer .container.center > div {
+  margin: 10px;
+}
+
 footer .container.center {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -647,10 +670,6 @@ footer .container.center {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-footer .container.center div {
-  width: 24%;
 }
 
 footer .container.center .title {
