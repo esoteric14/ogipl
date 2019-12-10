@@ -8,6 +8,10 @@
     <title>OGIPL</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:400,600,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css">
 </head>
 
 <body>
@@ -167,15 +171,19 @@
         </div>
     </section>
     <section id="project" class="ptb-30">
-            <h2 class="secTitle">Our Projects</h2>
-            <div class="projectList">
-                <img src="./assets/projects/p1.jpg" alt="">
-                <img src="./assets/projects/p2.jpg" alt="">
-                <img src="./assets/projects/p3.jpg" alt="">
-                <img src="./assets/projects/p4.jpg" alt="">
-            </div>
-            <button class="thmbtn mt-40">See More</button>
-        </section>
+        <h2 class="secTitle">Our Projects</h2>
+        <div class="projectList">
+            <img src="./assets/projects/p1.jpg" alt="">
+            <img src="./assets/projects/p2.jpg" alt="">
+            <img src="./assets/projects/p3.jpg" alt="">
+            <img src="./assets/projects/p4.jpg" alt="">
+            <img src="./assets/projects/p1.jpg" alt="">
+            <img src="./assets/projects/p2.jpg" alt="">
+            <img src="./assets/projects/p3.jpg" alt="">
+            <img src="./assets/projects/p4.jpg" alt="">
+        </div>
+        <button class="thmbtn mt-40">See More</button>
+    </section>
     <section id="testimonials" class="bgImg">
         <div class="container center ptb-80">
             <h2 class="secTitle">Testimonials</h2>
@@ -243,11 +251,13 @@
     <section id="client">
         <div class="overlay">
             <div class="container center">
-                <img src="./assets/client/Infosys.png" alt="" width="100">
-                <img src="./assets/client/intel.png" alt="" width="100">
-                <img src="./assets/client/isb.jpeg" alt="" width="100">
-                <img src="./assets/client/Nowfloats.svg" alt="" width="100">
-                <img src="./assets/client/Tata.png" alt="" width="100">
+                <div class="logos">
+                    <img src="./assets/client/Infosys.png" alt="">
+                    <img src="./assets/client/intel.png" alt="">
+                    <img src="./assets/client/isb.jpeg" alt="">
+                    <img src="./assets/client/Nowfloats.svg" alt="">
+                    <img src="./assets/client/Tata.png" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -308,15 +318,15 @@
 
 <script>
     // navbar
-    function toggleNav(){
+    function toggleNav() {
         let symbol = {
-            "hamburger" : "&#x2630;",
+            "hamburger": "&#x2630;",
             "cross": "&#10005;"
         }
-        if(event.target.classList.toggle('active')){
+        if (event.target.classList.toggle('active')) {
             document.getElementsByTagName('Nav')[0].style.display = 'block';
             event.target.innerHTML = symbol["cross"];
-        }else{
+        } else {
             document.getElementsByTagName('Nav')[0].style.display = 'none';
             event.target.innerHTML = symbol["hamburger"];
         }
@@ -342,5 +352,59 @@
         setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
 </script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+<script>
+    $('.projectList').owlCarousel({
+        autoplay: true,
+        center: true,
+        items: 5,
+        loop: true,
+        dots: false,
+        lazyLoad: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            425: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            },
+            1400: {
+                items: 5
+            }
+        }
+    });
+    $('#client .logos').owlCarousel({
+        autoplay: true,
+        center: true,
+        items: 5,
+        loop: true,
+        dots: false,
+        lazyLoad: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            425: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1200: {
+                items: 5
+            }
+        }
+    });
+</script>
+<style>
+
+</style>
 
 </html>

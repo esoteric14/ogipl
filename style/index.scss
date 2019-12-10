@@ -28,18 +28,12 @@ $primaryFont: "Muli", sans-serif;
     @content;
   }
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: $primaryFont;
   margin: 0;
-  background-image: linear-gradient(transparent, transparent 1px, rgb(255, 255, 255) 1px, rgb(255, 255, 255) 10px),
-    linear-gradient(
-      to right,
-      rgb(200, 195, 199),
-      rgb(200, 195, 199) 1px,
-      rgb(255, 255, 255) 1px,
-      rgb(255, 255, 255) 10px
-    );
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -118,7 +112,7 @@ body {
   }
 
   .overlay {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(202, 202, 202, 0.3);
     width: 100%;
     height: 100%;
   }
@@ -132,6 +126,10 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      justify-content: space-around;
+    }
   }
 
   .mt-40 {
@@ -154,10 +152,12 @@ body {
   }
 
   .bgImg {
-    background-image: url("../assets/pattern.png");
     background-position: center;
     background-repeat: repeat;
     background-size: unset;
+    background: linear-gradient(90deg, $thmWhite 11px, transparent 1%) center,
+      linear-gradient($thmWhite 11px, transparent 1%) center, $thmBlack;
+    background-size: 12px 12px;
   }
 }
 
@@ -170,12 +170,6 @@ header {
   justify-content: space-evenly;
   background-color: $thmWhite;
   z-index: 99;
-
-  @media (max-width: 768px) {
-    // div {
-    //   width: 100%;
-    // }
-  }
 
   .logo {
     padding: 10px;
@@ -290,6 +284,11 @@ header {
           font-size: 36px;
           width: 345px;
           padding-bottom: 30px;
+
+          @media (max-width: 425px) {
+            max-width: 290px;
+            font-size: 24px;
+          }
         }
       }
     }
@@ -352,6 +351,10 @@ header {
   background-clip: border-box;
   background-blend-mode: lighten;
 
+  @media (max-width: 768px) {
+    background-position: 54% 60%;
+  }
+
   .container {
     div {
       width: 450px;
@@ -371,6 +374,21 @@ header {
       width: 400px;
       height: 500px;
       object-fit: cover;
+      @media (max-width: 768px) {
+        margin-top: 100px;
+      }
+      @media (max-width: 425px) {
+        width: 100%;
+      }
+      @media (max-width: 375px) {
+        width: 300px;
+      }
+    }
+  }
+
+  .center {
+    @media (max-width: 768px) {
+      justify-content: center;
     }
   }
 }
@@ -389,6 +407,7 @@ header {
         .card {
           width: 300px;
           background-color: #f9fafa;
+          margin: 20px 0;
 
           img {
             width: 100%;
@@ -430,7 +449,7 @@ header {
         width: 450px;
         background-color: $thmWhite;
         border-left: $primaryColor solid 2px;
-        // padding: 20px;
+        margin: 10px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -469,19 +488,9 @@ header {
     display: flex;
     flex-direction: row;
     padding: 10px 0;
-    .swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-    }
+  
     img {
-      width: 25%;
+      width: 300px;
       height: 400px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
@@ -501,6 +510,9 @@ header {
 
     img {
       filter: grayscale(1);
+      width: 100px;
+      height: auto;
+      vertical-align: middle;
     }
   }
 }
@@ -519,6 +531,7 @@ header {
     h3 {
       font-size: 24px;
       font-weight: 800;
+      text-align: center;
     }
 
     p {
@@ -526,6 +539,10 @@ header {
       color: $thmWhite;
       font-weight: 600;
       width: 460px;
+      
+      @media (max-width: 768px) {
+        width: auto;
+      }
     }
   }
 }
@@ -543,6 +560,7 @@ header {
       .card {
         width: 300px;
         background-color: #f9fafa;
+        margin: 10px 0;
 
         img {
           width: 100%;
