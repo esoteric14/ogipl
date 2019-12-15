@@ -1,0 +1,154 @@
+// header
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: $thmWhite;
+    z-index: 99;
+  
+    .logo {
+      padding: 10px;
+  
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+  
+      img {
+        width: 200px;
+      }
+      .toggleNav {
+        display: none;
+        cursor: pointer;
+  
+        @media (max-width: 768px) {
+          display: inline-block;
+          background: transparent;
+          border: none;
+          font-size: 24px;
+          color: $thmBlack;
+          position: absolute;
+          right: 2px;
+          top: 8px;
+        }
+      }
+    }
+    .cta {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+  
+      nav {
+        @media (max-width: 768px) {
+          display: none;
+        }
+  
+        ul {
+          display: flex;
+  
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
+  
+          li {
+            padding: 20px;
+            font-size: 14px;
+  
+            @media (max-width: 875px) and (min-width: 768px) {
+              padding: 13.5px;
+            }
+  
+            &:hover {
+              color: $thmWhite;
+              background-color: $primaryColor;
+  
+              a {
+                color: $thmWhite;
+              }
+            }
+  
+            a {
+              color: $thmBlack;
+              font-weight: 700;
+              font-size: 12px;
+            }
+          }
+  
+          li.callCta {
+            &:hover {
+              background-color: $thmWhite;
+              color: $primaryColor;
+            }
+  
+            a {
+              color: $primaryColor;
+              font-weight: 800;
+            }
+            // @media (max-width: 768px) {
+            //   border-top: 1px solid $thmBlack;
+            // }
+          }
+        }
+      }
+    }
+  }
+
+  //footer{
+footer {
+    padding: 30px 0;
+    font-weight: 600;
+  
+    p {
+      width: 250px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+  
+    img {
+      padding-bottom: 20px;
+      width: 200px;
+    }
+  
+    .container.center > div {
+      margin: 10px;
+    }
+  
+    .container.center {
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  
+      .title {
+        font-size: 14px;
+        font-weight: 800;
+        margin: 0 0 10px;
+      }
+      ul.footerCTA {
+        li {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+      .address {
+        padding-bottom: 10px;
+      }
+      .contactDetail {
+        a {
+          display: block;
+          font-size: 12px;
+          padding: 2px 0px;
+        }
+      }
+  
+      .subcribe {
+        margin-top: 20px;
+        input {
+          margin-right: -5px;
+        }
+      }
+    }
+  }
