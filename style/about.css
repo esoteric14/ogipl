@@ -14,6 +14,15 @@
           flex-direction: row;
 }
 
+@media (max-width: 768px) {
+  #description .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 #description .container div:first-child {
   width: 60%;
 }
@@ -52,6 +61,12 @@
   min-height: 250px;
   color: #515151;
   font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  #description .container div:last-child {
+    margin-bottom: 60px;
+  }
 }
 
 #description .container div:last-child h5 {

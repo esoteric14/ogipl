@@ -10,6 +10,11 @@ $primaryFont: "Muli", sans-serif;
     justify-content: space-between;
     flex-direction: row;
 
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    
     div:first-child {
       width: 60%;
 
@@ -39,6 +44,10 @@ $primaryFont: "Muli", sans-serif;
       min-height: 250px;
       color: $thmBlack;
       font-weight: 800;
+
+      @media (max-width: 768px) {
+        margin-bottom: 60px;
+      }
       h5 {
         font-size: 14px;
       }
