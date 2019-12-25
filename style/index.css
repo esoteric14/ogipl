@@ -700,7 +700,7 @@ header .cta nav ul li.callCta a {
 #blog .container .card-container .card div p,
 #valueSystem .container .card-container .card div p {
   color: #515151;
-  height: 80px;
+  height: auto;
 }
 
 footer {
