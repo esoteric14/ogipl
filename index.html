@@ -1,383 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>OGIPL</title>
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,600,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <a href="./index.html">
-                <img src="./assets/logo.png" alt="OGIPL">
-            </a>
-            <button class="toggleNav" onclick="toggleNav(event)">&#x2630;</button>
-        </div>
-        <div class="cta">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./about.html">ABOUT US</a>
-                    </li>
-                    <li>
-                        <a href="">SERVICES</a>
-                    </li>
-                    <li>
-                        <a href="./project.html">PROJECTS</a>
-                    </li>
-                    <li>
-                        <a href="">BLOG</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">CONTACT US</a>
-                    </li>
-                    <li>
-                        <a href="">OUR BUISNESS</a>
-                    </li>
-                    <li>
-                        <a href="./career.html">CAREERS</a>
-                    </li>
-                    <li class="callCta" title="Call Us">
-                        <a href="tel:+919704742447">
-                            <img src="" alt="" srcset="">
-                            (+91) 9704742447
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./assets/logo.png" alt="OGIPL" />
+        </a>
+        <button class="toggleNav" onclick="toggleNav(event)">&#x2630;</button>
+      </div>
+      <div class="cta">
+        <nav>
+          <ul>
+            <li>
+              <a href="./about.html">ABOUT US</a>
+            </li>
+            <li>
+              <a href="">SERVICES</a>
+            </li>
+            <li>
+              <a href="./project.html">PROJECTS</a>
+            </li>
+            <li>
+              <a href="">BLOG</a>
+            </li>
+            <li>
+              <a href="./contact.html">CONTACT US</a>
+            </li>
+            <li>
+              <a href="">OUR BUISNESS</a>
+            </li>
+            <li>
+              <a href="./career.html">CAREERS</a>
+            </li>
+            <li class="callCta" title="Call Us">
+              <a href="tel:+919704742447">
+                <img src="" alt="" srcset="" />
+                (+91) 9704742447
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section id="banner">
-        <div class="bannerImage">
-            <div class="mySlides fade">
-                <div class="img" style="background-image: url('./assets/banner1.jpg');">
-                    <div class="imgOverlay center">
-                        <div class="container">
-                            <h2>We are used to making WONDERS</h2>
-                            <button class="thmbtn">View Project &nbsp; &xrarr;</button>
-                        </div>
-                    </div>
-                </div>
+      <div class="bannerImage">
+        <div class="mySlides fade">
+          <div
+            class="img"
+            style="background-image: url('./assets/home/banner1.jpg');"
+          >
+            <div class="imgOverlay center">
+              <div class="container">
+                <h2>We are used to making WONDERS</h2>
+                <button class="thmbtn">View Project &nbsp; &xrarr;</button>
+              </div>
             </div>
-            <div class="mySlides fade">
-                <div class="img" style="background-image: url('./assets/banner2.jpg');">
-                    <div class="imgOverlay center">
-                        <div class="container">
-                            <h2>We design we build</h2>
-                            <button class="thmbtn">View Project &nbsp; &xrarr;</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="img" style="background-image: url('./assets/banner3.jpg');">
-                    <div class="imgOverlay center">
-                        <div class="container">
-                            <h2>Turn key solutions</h2>
-                            <button class="thmbtn">View Project &nbsp; &xrarr;</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="mySlides fade">
-                <div class="img" style="background-image: url('./assets/banner4.jpg');">
-                    <div class="imgOverlay center">
-                        <div class="container">
-                            <h2>We are used to making WONDERS</h2>
-                            <button class="thmbtn">View Project &nbsp; &xrarr;</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align:center" class="dotContainer">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
+          </div>
         </div>
+        <div class="mySlides fade">
+          <div
+            class="img"
+            style="background-image: url('./assets/home/banner2.jpg');"
+          >
+            <div class="imgOverlay center">
+              <div class="container">
+                <h2>We design we build</h2>
+                <button class="thmbtn">View Project &nbsp; &xrarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div
+            class="img"
+            style="background-image: url('./assets/home/banner3.jpg');"
+          >
+            <div class="imgOverlay center">
+              <div class="container">
+                <h2>Turn key solutions</h2>
+                <button class="thmbtn">View Project &nbsp; &xrarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center" class="dotContainer">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
     </section>
     <section id="aboutUs" class="ptb-80">
-        <div class="container center">
-            <div>
-                <h2 class="secTitle">Why choose our services?</h2>
-                <p>We aspire to reach the unprecedented heights of creating interiors that are built with hi tech
-                    technology and customized in design and layout.</p>
-                <p>
-                    Our team of dedicated professionals do not design interiors but build the dream place every
-                    organization aspires for. Our work not only constitutes interior designing but also includes Civil,
-                    Electrical, Plumbing, Furnishing, Networking, Communication, H.V.AC and Fire security.
-                </p>
-                <button class="thmbtn">More About Us</button>
-            </div>
-            <img src="./assets/aboutus.jpg" alt="About Us">
+      <div class="container center">
+        <div>
+          <h2 class="secTitle">Why choose our services?</h2>
+          <p>
+            At Orange and Green, we endeavor to create interiors that have an
+            ambience of innovation, inspiration and sophistication. We believe
+            in creating value for our clients through our Experience in
+            specialized design and development of Turnkey Interiors. We focus on
+            business imperatives with consistency and our team has a flair for
+            design as well as functionality. Our vision is that of transforming
+            the work environment with innovation and customization. We create
+            high quality interiors and make the work environment conducive to
+            productivity. Therefore, Orange and green is an interior design
+            organization that is capable of nailing the client specifications.
+            All our clients take pride and have faith in the service that we
+            have delivered to them.
+          </p>
+          <p>
+            18 years of experience, technical expertise, dedication and clarity
+            of vision are the highlights of our organization. Since its
+            foundation, Orange & Green has been constantly improvising to give
+            exclusive, innovative and customized designs to its clients. Our
+            focus has always been on all key parameters that are crucial to make
+            full service turnkey interiors. Customization of designs as per
+            client’s needs has always been on the priority list for our team. It
+            is a rigorous and extensive planning process that we follow with
+            intensive focus on key deliverables. We design and deliver complete
+            solutions.
+          </p>
+          <button class="thmbtn">More About Us</button>
         </div>
+        <img src="./assets/home/whyChooseOurServices.jpg" alt="Why Choose Us" />
+      </div>
     </section>
     <section id="services" class="bgImg">
-        <div class="overlay ptb-80">
-            <div class="container center">
-                <h2 class="secTitle">Our Services</h2>
-                <div class="card-container center">
-                    <div class="card">
-                        <img src="./assets/blog/blog1.jpg" alt="Blog" />
-                        <div>
-                            <h5>HVAC</h5>
-                            <p>Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                                quasi.</p>
-                            <a href="#" class="readMore">See Projects</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/blog/blog1.jpg" alt="Blog" />
-                        <div>
-                            <h5>Communication</h5>
-                            <p>Dicta sunt explicabo. Nemo enim ipsam aspernatur aut odit aut.</p>
-                            <a href="#" class="readMore">See Projects</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/blog/blog1.jpg" alt="Blog" />
-                        <div>
-                            <h5>Networking</h5>
-                            <p>Fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                Neque porro.</p>
-                            <a href="#" class="readMore">See Projects</a>
-                        </div>
-                    </div>
-                </div>
-                <button class="thmbtn mt-40">See All</button>
+      <div class="overlay ptb-80">
+        <div class="container center">
+          <h2 class="secTitle">Our Services</h2>
+          <div class="card-container center">
+            <div class="card">
+              <img src="./assets/service/HVAC.jpg" alt="Blog" />
+              <div>
+                <h5>HVAC</h5>
+                <p>
+                  Load & Machine configuration, duct & pipe routing, erection
+                  management, cabling, controls, commissioning & testing.
+                </p>
+                <a href="#" class="readMore">See Projects</a>
+              </div>
             </div>
+            <div class="card">
+              <img src="./assets/service//communication.jpg" alt="Blog" />
+              <div>
+                <h5>Communication</h5>
+                <p>
+                  Wired & wireless EPABX systems, High -end Video, audio &
+                  Public address systems.
+                </p>
+                <a href="#" class="readMore">See Projects</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/service/networking.jpg" alt="Blog" />
+              <div>
+                <h5>Networking</h5>
+                <p>
+                  Local area (voice & data) net working, Server/ Hub /switch
+                  installation.
+                </p>
+                <a href="#" class="readMore">See Projects</a>
+              </div>
+            </div>
+          </div>
+          <button class="thmbtn mt-40">See All</button>
         </div>
+      </div>
     </section>
     <section id="project" class="ptb-30">
-        <h2 class="secTitle">Our Projects</h2>
-        <div class="projectList">
-            <img src="./assets/projects/p1.jpg" alt="">
-            <img src="./assets/projects/p2.jpg" alt="">
-            <img src="./assets/projects/p3.jpg" alt="">
-            <img src="./assets/projects/p4.jpg" alt="">
-            <img src="./assets/projects/p1.jpg" alt="">
-            <img src="./assets/projects/p2.jpg" alt="">
-            <img src="./assets/projects/p3.jpg" alt="">
-            <img src="./assets/projects/p4.jpg" alt="">
-        </div>
-        <button class="thmbtn mt-40">See More</button>
+      <h2 class="secTitle">Our Projects</h2>
+      <div class="projectList">
+        <img src="./assets/projects/project1.jpg" alt="" />
+        <img src="./assets/projects/project2.jpg" alt="" />
+        <img src="./assets/projects/project3.jpg" alt="" />
+        <img src="./assets/projects/project4.jpg" alt="" />
+        <img src="./assets/projects/project5.jpg" alt="" />
+        <img src="./assets/projects/project6.jpg" alt="" />
+        <img src="./assets/projects/project7.jpg" alt="" />
+      </div>
+      <button class="thmbtn mt-40">See More</button>
     </section>
     <section id="testimonials" class="bgImg">
-        <div class="container center ptb-80">
-            <h2 class="secTitle">Testimonials</h2>
-            <div class="card-container center">
-                <div class="card">
-                    <div>
-                        <img src="./assets/sid.png" alt="author" class="authorImg">
-                    </div>
-                    <div>
-                        <p>“Quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                            non numquam eius modi tempora incidunt ut labore et dolore magnam.”</p>
-                        <h2>Aliquom Quaeret</h2>
-                        <h3>CEO, voluptatem</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="./assets/sid.png" alt="author" class="authorImg">
-                    </div>
-                    <div>
-                        <p>“Quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                            non numquam eius modi tempora incidunt ut labore et dolore magnam.”</p>
-                        <h2>Aliquom Quaeret</h2>
-                        <h3>CEO, voluptatem</h3>
-                    </div>
-                </div>
+      <div class="container center ptb-80">
+        <h2 class="secTitle">Testimonials</h2>
+        <div class="card-container center">
+          <div class="card">
+            <div>
+              <img src="./assets/home/ankit.jpg" alt="author" class="authorImg" />
             </div>
+            <div>
+              <p>
+                “This process was so easy and worth it. With so many different
+                ideas about design, things can definitely get confusing. OGIPL’s
+                amazing system and designer made my project exactly as I had
+                hoped it would be!”
+              </p>
+              <h2>Ankit Singhaniya</h2>
+              <h3>Owner, D4dog</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <img src="./assets/sid.png" alt="author" class="authorImg" />
+            </div>
+            <div>
+              <p>
+                “We just moved into a more spacious place and had no idea how to
+                decorate. We decided to try out OGIPL after finding it online
+                and we're so happy we did.”
+              </p>
+              <h2>Saif Ali</h2>
+              <h3>Founder, Stickerelics</h3>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="blog" class="ptb-80">
-        <div class="container">
-            <h2 class="secTitle">Blogs</h2>
-            <div class="card-container center">
-                <div class="card">
-                    <img src="./assets/blog/blog1.jpg" alt="Blog" />
-                    <div>
-                        <h5>Excepturi sint occaecati cupiditate non</h5>
-                        <p>Iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-                            qui.</p>
-                        <a href="#" class="readMore">&mdash;&nbsp;Read More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/blog/blog1.jpg" alt="Blog" />
-                    <div>
-                        <h5>Provident, similique sunt in culpa qui</h5>
-                        <p>Dolorem eum fugiat quo voluptas nulla. At vero eos et accusamus et iusto odio dignissimos.
-                        </p>
-                        <a href="#" class="readMore">&mdash;&nbsp;Read More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/blog/blog1.jpg" alt="Blog" />
-                    <div>
-                        <h5>Officia deserunt mollitia animi, id est</h5>
-                        <p>Ducimus qui blanditiis praesentium voluptatum deleniti. Atque corrupti quos dolores et quas
-                            molestias.</p>
-                        <a href="#" class="readMore">&mdash;&nbsp;Read More</a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="secTitle">Blogs</h2>
+        <div class="card-container center">
+          <div class="card">
+            <img src="./assets/blog/blog1.jpg" alt="Blog" />
+            <div>
+              <h5>Excepturi sint occaecati cupiditate non</h5>
+              <p>
+                Iure reprehenderit qui in ea voluptate velit esse quam nihil
+                molestiae consequatur, vel illum qui.
+              </p>
+              <a href="#" class="readMore">&mdash;&nbsp;Read More</a>
             </div>
-            <button class="thmbtn mt-40">See All</button>
+          </div>
+          <div class="card">
+            <img src="./assets/blog/blog1.jpg" alt="Blog" />
+            <div>
+              <h5>Provident, similique sunt in culpa qui</h5>
+              <p>
+                Dolorem eum fugiat quo voluptas nulla. At vero eos et accusamus
+                et iusto odio dignissimos.
+              </p>
+              <a href="#" class="readMore">&mdash;&nbsp;Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/blog/blog1.jpg" alt="Blog" />
+            <div>
+              <h5>Officia deserunt mollitia animi, id est</h5>
+              <p>
+                Ducimus qui blanditiis praesentium voluptatum deleniti. Atque
+                corrupti quos dolores et quas molestias.
+              </p>
+              <a href="#" class="readMore">&mdash;&nbsp;Read More</a>
+            </div>
+          </div>
         </div>
+        <button class="thmbtn mt-40">See All</button>
+      </div>
     </section>
     <section id="client" class="bgImg">
-        <div class="overlay">
-            <div class="container center">
-                <div class="logos">
-                    <img src="./assets/client/Infosys.png" alt="">
-                    <img src="./assets/client/intel.png" alt="">
-                    <img src="./assets/client/isb.jpeg" alt="">
-                    <img src="./assets/client/Nowfloats.svg" alt="">
-                    <img src="./assets/client/Tata.png" alt="">
-                </div>
-            </div>
+      <div class="overlay">
+        <div class="container center">
+          <div class="logos">
+            <img src="./assets/client/Infosys.png" alt="" />
+            <img src="./assets/client/intel.png" alt="" />
+            <img src="./assets/client/isb.jpeg" alt="" />
+            <img src="./assets/client/Nowfloats.svg" alt="" />
+            <img src="./assets/client/Tata.png" alt="" />
+          </div>
         </div>
+      </div>
     </section>
     <section id="getInTouch">
-        <div class="overlay ptb-80">
-            <div class="container center">
-                <h3>We know that good design means good business!</h3>
-                <p>Since its foundation, Orange & Green has been constantly improvising to give exclusive, innovative
-                    and customized designs to its clients.</p>
-                <a href="./contact.html" class="thmbtn mt-40">Get In Touch</a>
-            </div>
+      <div class="overlay ptb-80">
+        <div class="container center">
+          <h3>We know that good design means good business!</h3>
+          <p>
+            Since its foundation, Orange & Green has been constantly improvising
+            to give exclusive, innovative and customized designs to its clients.
+          </p>
+          <a href="./contact.html" class="thmbtn mt-40">Get In Touch</a>
         </div>
+      </div>
     </section>
     <footer>
-        <div class="container center">
-            <div>
-                <img src="./assets/logo.png" alt="OGIPL">
-                <p class="businessDescription">laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-                    distinctio. Nam libero
-                    tempore.</p>
-            </div>
-            <div>
-                <h3 class="title">Company</h3>
-                <ul class="footerCTA">
-                    <li>
-                        <a href="#" title="Read our introduction">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Our servie list">Our Services</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Check our client feelings">Clients Reviews</a>
-                    </li>
-                    <li>
-                        <a href="#" title="We will be happy to hear you">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="title">Headquaters</h3>
-                <p class="address">OCAC Building, Plot No. N-1/7-D, Acharya Vihar Square, RRL</p>
-                <div class="contactDetail">
-                    <a href="mailto:contact@ogipl.com" title="Mail us at contact@ogipl.com">contact@ogipl.com</a>
-                    <a href="tel:+9197047 42447" title="Voice call">(+91) 97047 42447</a>
-                </div>
-            </div>
-            <div>
-                <h3 class="title">Newsletter Subscription</h3>
-                <p>Nobis est eligendi optio cumque nihil impedit quo minus.</p>
-                <div class="subcribe">
-                    <input type="text" placeholder="enter your email address">
-                    <button class="thmbtn">Subscribe</button>
-                </div>
-            </div>
+      <div class="container center">
+        <div>
+          <img src="./assets/logo.png" alt="OGIPL" />
+          <p class="businessDescription">
+            laborum et dolorum fuga. Et harum quidem rerum facilis est et
+            expedita distinctio. Nam libero tempore.
+          </p>
         </div>
+        <div>
+          <h3 class="title">Company</h3>
+          <ul class="footerCTA">
+            <li>
+              <a href="#" title="Read our introduction">About Us</a>
+            </li>
+            <li>
+              <a href="#" title="Our servie list">Our Services</a>
+            </li>
+            <li>
+              <a href="#" title="Check our client feelings">Clients Reviews</a>
+            </li>
+            <li>
+              <a href="#" title="We will be happy to hear you">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="title">Headquaters</h3>
+          <p class="address">
+            OCAC Building, Plot No. N-1/7-D, Acharya Vihar Square, RRL
+          </p>
+          <div class="contactDetail">
+            <a
+              href="mailto:contact@ogipl.com"
+              title="Mail us at contact@ogipl.com"
+              >contact@ogipl.com</a
+            >
+            <a href="tel:+9197047 42447" title="Voice call"
+              >(+91) 97047 42447</a
+            >
+          </div>
+        </div>
+        <div>
+          <h3 class="title">Newsletter Subscription</h3>
+          <p>Nobis est eligendi optio cumque nihil impedit quo minus.</p>
+          <div class="subcribe">
+            <input type="text" placeholder="enter your email address" />
+            <button class="thmbtn">Subscribe</button>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 
-<script>
+  <script>
     // header
     var slideIndex = 0;
     showSlides();
 
     function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
-</script>
-<script src="./js/common.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
-<script>
-    $('.projectList').owlCarousel({
-        autoplay: true,
-        center: true,
-        items: 5,
-        loop: true,
-        dots: false,
-        lazyLoad: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            425: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            1200: {
-                items: 3
-            },
-            1400: {
-                items: 5
-            }
+  </script>
+  <script src="./js/common.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+  <script>
+    $(".projectList").owlCarousel({
+      autoplay: true,
+      center: true,
+      items: 5,
+      loop: true,
+      dots: false,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        425: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1200: {
+          items: 3
+        },
+        1400: {
+          items: 5
         }
+      }
     });
-    $('#client .logos').owlCarousel({
-        autoplay: true,
-        center: true,
-        items: 5,
-        loop: true,
-        dots: false,
-        lazyLoad: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            425: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            1200: {
-                items: 5
-            }
+    $("#client .logos").owlCarousel({
+      autoplay: true,
+      center: true,
+      items: 5,
+      loop: true,
+      dots: false,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        425: {
+          items: 2
+        },
+        768: {
+          items: 3
+        },
+        1200: {
+          items: 5
         }
+      }
     });
-</script>
-
+  </script>
 </html>
