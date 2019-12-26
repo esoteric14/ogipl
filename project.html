@@ -10,6 +10,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css"
+    />
   </head>
 
   <body>
@@ -27,19 +35,33 @@
               <a href="./about.html">ABOUT US</a>
             </li>
             <li>
-              <a href="">SERVICES</a>
+              <a href="./service.html">SERVICES</a>
             </li>
             <li>
               <a href="./project.html">PROJECTS</a>
             </li>
             <li>
-              <a href="">BLOG</a>
+              <a href="#">BLOG</a>
             </li>
             <li>
               <a href="./contact.html">CONTACT US</a>
             </li>
             <li>
-              <a href="">OUR BUISNESS</a>
+              <a href="#">OUR BUISNESS</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="#">GCIPL</a>
+                </li>
+                <li>
+                  <a href="#">Epic</a>
+                </li>
+                <li>
+                  <a href="#">INI</a>
+                </li>
+                <li>
+                  <a href="#">Circuit-tech</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="./career.html">CAREERS</a>
@@ -63,14 +85,16 @@
         </p>
       </div>
     </section>
-    <section id="project" class="ptb-80">
-      <div class="container">
-        <div class="projectList">
-          <img src="./assets/projects/p1.jpg" alt="" />
-          <img src="./assets/projects/p2.jpg" alt="" />
-          <img src="./assets/projects/p3.jpg" alt="" />
-          <img src="./assets/projects/p4.jpg" alt="" />
-        </div>
+    <section id="project" class="ptb-30">
+      <!-- <h2 class="secTitle">Our Projects</h2> -->
+      <div class="projectList">
+        <img src="./assets/projects/project1.jpg" alt="" />
+        <img src="./assets/projects/project2.jpg" alt="" />
+        <img src="./assets/projects/project3.jpg" alt="" />
+        <img src="./assets/projects/project4.jpg" alt="" />
+        <img src="./assets/projects/project5.jpg" alt="" />
+        <img src="./assets/projects/project6.jpg" alt="" />
+        <img src="./assets/projects/project7.jpg" alt="" />
       </div>
     </section>
     <section id="getInTouch">
@@ -90,7 +114,10 @@
         <div>
           <img src="./assets/logo.png" alt="OGIPL" width="150" />
           <p class="businessDescription">
-            Orange and Green Pvt. Ltd is a full service interior designing firm that has a diversified portfolio of clients.At Orange and Green, we endeavor to create interiors that have an ambience of innovation, inspiration and sophistication.
+            Orange and Green Pvt. Ltd is a full service interior designing firm
+            that has a diversified portfolio of clients.At Orange and Green, we
+            endeavor to create interiors that have an ambience of innovation,
+            inspiration and sophistication.
           </p>
         </div>
         <div>
@@ -136,5 +163,35 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+    <script>
+      $(".projectList").owlCarousel({
+        autoplay: true,
+        center: true,
+        items: 5,
+        loop: true,
+        dots: false,
+        lazyLoad: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          425: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1200: {
+            items: 3
+          },
+          1400: {
+            items: 5
+          }
+        }
+      });
+    </script>
   </body>
 </html>

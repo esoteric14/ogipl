@@ -251,14 +251,8 @@ header .cta nav ul {
 }
 
 header .cta nav ul li {
-  padding: 20px;
   font-size: 14px;
-}
-
-@media (max-width: 875px) and (min-width: 768px) {
-  header .cta nav ul li {
-    padding: 13.5px;
-  }
+  position: relative;
 }
 
 header .cta nav ul li:hover {
@@ -270,10 +264,58 @@ header .cta nav ul li:hover a {
   color: #ffffff;
 }
 
+header .cta nav ul li:hover ul.dropdown {
+  display: block !important;
+}
+
+header .cta nav ul li:hover ul.dropdown a {
+  color: #515151;
+}
+
+header .cta nav ul li:hover ul.dropdown a:hover {
+  color: #ffffff;
+}
+
 header .cta nav ul li a {
   color: #515151;
   font-weight: 700;
   font-size: 12px;
+  padding: 20px;
+  display: inline-block;
+}
+
+@media (max-width: 875px) and (min-width: 768px) {
+  header .cta nav ul li a {
+    padding: 13.5px;
+  }
+}
+
+header .cta nav ul li ul.dropdown {
+  display: none !important;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 99;
+  color: #515151 !important;
+  min-width: 150px;
+}
+
+header .cta nav ul li ul.dropdown li {
+  width: 100%;
 }
 
 header .cta nav ul li.callCta:hover {

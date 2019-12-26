@@ -223,12 +223,8 @@ header {
         }
 
         li {
-          padding: 20px;
           font-size: 14px;
-
-          @media (max-width: 875px) and (min-width: 768px) {
-            padding: 13.5px;
-          }
+          position: relative;
 
           &:hover {
             color: $thmWhite;
@@ -237,12 +233,47 @@ header {
             a {
               color: $thmWhite;
             }
+
+            ul.dropdown {
+              display: block !important;
+              a {
+                color: $thmBlack;
+                &:hover{
+                  color: $thmWhite;
+                }
+              }
+            }
           }
 
           a {
             color: $thmBlack;
             font-weight: 700;
             font-size: 12px;
+            padding: 20px;
+            display: inline-block;
+
+            @media (max-width: 875px) and (min-width: 768px) {
+              padding: 13.5px;
+            }
+          }
+
+          ul.dropdown {
+            display: none !important;
+            position: absolute;
+            top: 55px;
+            left: 0;
+            background-color: $thmWhite;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 99;
+            color: $thmBlack !important;
+            min-width: 150px;
+
+            li {
+              width: 100%;
+            }
           }
         }
 
@@ -494,7 +525,7 @@ header {
     display: flex;
     flex-direction: row;
     padding: 10px 0;
-  
+
     img {
       width: 300px;
       height: 400px;
@@ -542,7 +573,7 @@ header {
       color: $thmWhite;
       font-weight: 600;
       width: 460px;
-      
+
       @media (max-width: 768px) {
         width: auto;
       }
