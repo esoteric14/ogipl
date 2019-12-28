@@ -1,0 +1,51 @@
+$primaryColor: #08a146;
+$thmBlack: #515151;
+$thmWhite: #ffffff;
+$primaryFont: "Muli", sans-serif;
+
+#serviceList {
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    .card {
+      width: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      margin: 10px 10px 0 0;
+
+      .img {
+        background-color: $primaryColor;
+        padding: 10px;
+        margin-right: 10px;
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+        }
+      }
+      .detail {
+        font-family: $primaryFont;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        .title {
+          color: #000000;
+          font-weight: 800;
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+        .desc {
+          color: $thmBlack;
+          font-size: 12px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
