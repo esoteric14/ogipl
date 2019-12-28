@@ -1,0 +1,78 @@
+#projectlist .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 690px) {
+  #projectlist .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#projectlist .container .card {
+  width: 310px;
+  height: 400px;
+  margin-bottom: 30px;
+  position: relative;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+#projectlist .container .card:hover .overlay {
+  background-color: #08a146c2;
+}
+
+#projectlist .container .card:hover .overlay .zoom {
+  display: inline-block;
+}
+
+#projectlist .container .card .overlay {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 161, 70, 0)), to(#000000));
+  background-image: linear-gradient(to bottom, rgba(8, 161, 70, 0), #000000);
+  display: inline-block;
+}
+
+#projectlist .container .card .overlay .zoom {
+  display: none;
+  background-image: url("/assets/projects/fullscreen.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#projectlist .container .card .overlay .data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 40px;
+  font-weight: 800;
+}
+
+#projectlist .container .card .overlay .data span {
+  font-size: 12px;
+}
+
+#projectlist .container .card .overlay .data h5 {
+  font-size: 16px;
+  margin: 0;
+}
+/*# sourceMappingURL=project.css.map */
