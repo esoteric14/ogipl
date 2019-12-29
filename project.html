@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/index.css" />
-    <link rel="stylesheet" href="./style/project.css">
+    <link rel="stylesheet" href="./style/project.css" />
   </head>
 
   <body>
@@ -79,62 +79,83 @@
       </div>
     </section>
     <section id="projectlist" class="ptb-30">
-        <div class="container">
-          <div class="card" style="background-image: url('./assets/projects/project1.jpg');">
-            <div class="overlay">
-              <div class="zoom"></div>
-              <div class="data">
-                <span>Infra & Power Sector</span>
-                <h5>KSK Mahanandhi Power Company Ltd</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="background-image: url('./assets/projects/project2.jpg');">
-            <div class="overlay">
-              <div class="zoom"></div>
-              <div class="data">
-                <span>Infra & Power Sector</span>
-                <h5>KSK Mahanandhi Power Company Ltd</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="background-image: url('./assets/projects/project3.jpg');">
-            <div class="overlay">
-              <div class="zoom"></div>
-              <div class="data">
-                <span>Infra & Power Sector</span>
-                <h5>KSK Mahanandhi Power Company Ltd</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="background-image: url('./assets/projects/project4.jpg');">
-            <div class="overlay">
-              <div class="zoom"></div>
-              <div class="data">
-                <span>Infra & Power Sector</span>
-                <h5>KSK Mahanandhi Power Company Ltd</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="background-image: url('./assets/projects/project5.jpg');">
-            <div class="overlay">
-              <div class="zoom"></div>
-              <div class="data">
-                <span>Infra & Power Sector</span>
-                <h5>KSK Mahanandhi Power Company Ltd</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="background-image: url('./assets/projects/project6.jpg');">
-            <div class="overlay">
-              <div class="zoom"></div>
-              <div class="data">
-                <span>Infra & Power Sector</span>
-                <h5>KSK Mahanandhi Power Company Ltd</h5>
-              </div>
+      <div class="container">
+        <div
+          class="card"
+          style="background-image: url('./assets/projects/project1.jpg');"
+        >
+          <div class="overlay">
+            <div
+              class="zoom" onclick="previewImg('./assets/projects/project1.jpg')"
+            ></div>
+            <div class="data">
+              <span>Infra & Power Sector</span>
+              <h5>KSK Mahanandhi Power Company Ltd</h5>
             </div>
           </div>
         </div>
+        <div
+          class="card"
+          data-src="./assets/projects/project2.jpg"
+          style="background-image: url('./assets/projects/project2.jpg');"
+        >
+          <div class="overlay">
+            <div class="zoom" onclick="previewImg('./assets/projects/project2.jpg')"></div>
+            <div class="data">
+              <span>Infra & Power Sector</span>
+              <h5>KSK Mahanandhi Power Company Ltd</h5>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="background-image: url('./assets/projects/project3.jpg');"
+        >
+          <div class="overlay">
+            <div class="zoom" onclick="previewImg('./assets/projects/project3.jpg')"></div>
+            <div class="data">
+              <span>Infra & Power Sector</span>
+              <h5>KSK Mahanandhi Power Company Ltd</h5>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="background-image: url('./assets/projects/project4.jpg');"
+        >
+          <div class="overlay">
+            <div class="zoom" onclick="previewImg('./assets/projects/project4.jpg')"></div>
+            <div class="data">
+              <span>Infra & Power Sector</span>
+              <h5>KSK Mahanandhi Power Company Ltd</h5>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="background-image: url('./assets/projects/project5.jpg');"
+        >
+          <div class="overlay">
+            <div class="zoom" onclick="previewImg('./assets/projects/project5.jpg')"></div>
+            <div class="data">
+              <span>Infra & Power Sector</span>
+              <h5>KSK Mahanandhi Power Company Ltd</h5>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="background-image: url('./assets/projects/project6.jpg');"
+        >
+          <div class="overlay">
+            <div class="zoom" onclick="previewImg('./assets/projects/project6.jpg')"></div>
+            <div class="data">
+              <span>Infra & Power Sector</span>
+              <h5>KSK Mahanandhi Power Company Ltd</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="getInTouch">
       <div class="overlay ptb-80">
@@ -202,35 +223,15 @@
         </div>
       </div>
     </footer>
+    <section id="imagePreview">
+      <div class="img">
+        <img id="imgEl" src="#" alt="" />
+      </div>
+      <span class="closeImagePreview" title="close preview" onclick="closePreviewImg('imagePreview')">&#10005;</span>
+    </section>
     <script src="./js/common.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
     <script>
-      $(".projectList").owlCarousel({
-        autoplay: true,
-        center: true,
-        items: 5,
-        loop: true,
-        dots: false,
-        lazyLoad: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          425: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          1200: {
-            items: 3
-          },
-          1400: {
-            items: 5
-          }
-        }
-      });
-    </script> -->
+    
+    </script>
   </body>
 </html>

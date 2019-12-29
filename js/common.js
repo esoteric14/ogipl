@@ -12,3 +12,15 @@ function toggleNav() {
         event.target.innerHTML = symbol["hamburger"];
     }
 }
+function previewImg(imgUrl) {
+    var imagePreview = document.getElementById('imagePreview');
+    var imgEl = document.getElementById('imgEl');
+    
+    imgEl.src = imgUrl;
+    imagePreview.style.display = 'block';
+}
+
+function closePreviewImg(el){
+    var imagePreview = document.getElementById('imagePreview');
+    imagePreview.style.display = 'none';
+}

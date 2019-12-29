@@ -75,4 +75,43 @@
   font-size: 16px;
   margin: 0;
 }
+
+#imagePreview {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000009c;
+  overflow: hidden;
+}
+
+#imagePreview .img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#imagePreview .img img {
+  width: 100%;
+  height: 100%;
+}
+
+#imagePreview .closeImagePreview {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
 /*# sourceMappingURL=project.css.map */
