@@ -3,52 +3,111 @@ $thmBlack: #515151;
 $thmWhite: #ffffff;
 $primaryFont: "Muli", sans-serif;
 
-#openings{
-    .container {
-      flex-direction: column;
-  
-      .card-container {
-        width: 100%;
-        flex-direction: row;
-  
-        .card {
-          width: 30%;
-          background-color: $thmWhite;
-          border-left: $primaryColor solid 2px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+#openings {
+  .container {
+    flex-direction: column;
 
-          div{
-              padding: 20px;
-              color: $thmBlack;
+    .card-container {
+      width: 100%;
+      flex-direction: row;
 
-              h2{
-                font-weight: 800;
-                font-size: 16px;
-                margin: 0;
-              }
-              h3{
-                font-weight: 800;
-                font-size: 12px;
-                margin: 0 0 20px;
-                text-transform: uppercase;
-              }
+      .card {
+        width: 30%;
+        background-color: $thmWhite;
+        border-left: $primaryColor solid 2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-              ul{
-                  li{
-                      list-style-type: disc;
-                      margin-left: 15px;
-                      font-size: 14px;
-                  }
-                  margin-bottom: 20px;
-              }
+        div {
+          padding: 20px;
+          color: $thmBlack;
 
-              button{  
-                  float: right;
-              }
+          h2 {
+            font-weight: 800;
+            font-size: 16px;
+            margin: 0;
+          }
+          h3 {
+            font-weight: 800;
+            font-size: 12px;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+          }
+
+          ul {
+            li {
+              list-style-type: disc;
+              margin-left: 15px;
+              font-size: 14px;
+            }
+            margin-bottom: 20px;
+          }
+
+          button {
+            float: right;
           }
         }
       }
     }
   }
+}
+
+#jobForm {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000009c;
+  overflow: hidden;
+
+  .formContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $thmWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+    form{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      div{
+        input{
+          margin: 10px;
+          padding: 10px 6px;
+          width: 250px;
+        }
+      }
+    }
+    .submit{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px;
+
+      input{
+        border: none;
+      }
+    }
+    .closeImagePreview {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 22px;
+      font-weight: 600;
+      padding: 10px;
+      cursor: pointer;
+      color: $primaryColor;
+    }
+  }
+}
